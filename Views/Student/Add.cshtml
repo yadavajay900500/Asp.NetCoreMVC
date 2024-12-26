@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model ASP_Net_Core_MVC.Models.StudentModel
+
+<h1>Add the Student Data</h1>
+
+<form method="post">
+
+
+    <div class="container row">
+
+ 
+<div class="col-3 mt-3">
+      <label class="form-label col-form-label-sm" for="name">Name</label>
+        <input type="text" id="name" class="form-control form-control-sm" asp-for="Name" />
+</div>
+
+        <div class="col-3 mt-3">
+        <label class="form-label col-form-label-sm" for="Discription">Discription</label>
+        <input type="text" id="Discription" class="form-control form-control-sm" asp-for="Description" />
+</div>
+        <div class="col-3 mt-3">
+        <label class="form-label col-form-label-sm" for="Email">Email</label>
+        <input type="email" id="=Email" class="form-control form-control-sm" asp-for="EmailId" />
+</div>
+        <div class="col-3 mt-3">
+
+        <label class="form-check-label col-form-label-sm" for="Subcribe">Subscrive</label>
+    <input type="checkbox" id="Subcribe" class="form-check-input"   asp-for="Subcrived"/>
+</div>
+
+        <div class="col-4 mt-3">
+ <button type="submit" class="btn btn-primary"> Add</button>
+
+ @* <button class="btn waves-effect waves-light" type="submit">Submit</button> *@
+
+</div>
+    </div>
+</form>

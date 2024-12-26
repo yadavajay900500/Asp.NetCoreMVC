@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<ASP_Net_Core_MVC.Models.Entities.Student>;
+
+<h1>Student Data is</h1>
+
+<table class="table">
+    <thead>
+     <tr>
+         <th>Id</th>
+         <th>Name</th>
+         <th>Email</th>
+         <th>Description</th>
+         <th>Action</th>
+     </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var student in Model)
+        {
+
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>@student.EmailId</td>
+                <td>@student.Description</td>
+                <td>
+                    <a>Edit</a>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
